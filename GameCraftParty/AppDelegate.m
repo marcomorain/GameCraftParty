@@ -15,8 +15,11 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    const int w = 1280;
+    const int h = 720;
+    const CGSize size = CGSizeMake(w, h);
     /* Pick a size for the scene */
-    SKScene *scene = [MyScene sceneWithSize:CGSizeMake(1024, 768)];
+    SKScene *scene = [MyScene sceneWithSize:size];
 
     /* Set the scale mode to scale to fit the window */
     scene.scaleMode = SKSceneScaleModeAspectFit;
@@ -25,6 +28,11 @@
 
     self.skView.showsFPS = YES;
     self.skView.showsNodeCount = YES;
+    self.skView.showsDrawCount = YES;
+
+    [self.window setContentMaxSize:size];
+    [self.window setContentMinSize:size];
+    [self.window update];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {

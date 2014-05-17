@@ -8,6 +8,6 @@
 @property (retain) SKSpriteNode* sprite;
 @property (retain) NSString* text;
 
--(void)updateWithTimeDelta:(CFTimeInterval)delta andController:(Xbox360Controller*)controller;
+-(void)updateWithTimeDelta:(CFTimeInterval)delta atTime:(CFAbsoluteTime)time andController:(Xbox360Controller*)controller;
 
 @end

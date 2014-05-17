@@ -78,8 +78,8 @@
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.65 blue:0.3 alpha:1.0];
 
-        for (int i=0; i<32; i++){
-            for (int j=0; j<32; j++){
+        for (int i=0; i<10; i++){
+            for (int j=0; j<6; j++){
                 SKSpriteNode* node = [SKSpriteNode spriteNodeWithTexture:self.floorTex];
                 node.position = CGPointMake(i*self.floorTex.size.width, j*self.floorTex.size.height);
                 [self addChild:node];
@@ -198,7 +198,6 @@ static double randomd() {
 
     CFTimeInterval delta = self.lastFrame - currentTime;
 
-
     if ((rand() % 64) == 0) {
         Zombie* z = [self makeZombie];
         [z.sprite runAction:[SKAction moveToY:0 duration:10]];
@@ -208,7 +207,7 @@ static double randomd() {
     /* Called before each frame is rendered */
 
     for (Xbox360Controller* controller in self.controllers) {
-        [self.player1 updateWithTimeDelta:delta andController:controller];
+        [self.player1 updateWithTimeDelta:delta atTime:currentTime andController:controller];
         self.label.text = self.player1.text;
     }
 

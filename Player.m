@@ -1,11 +1,19 @@
 #import "Player.h"
 #import "Sprites.h"
 
+typedef enum {
+    PLAYER_NONE,
+    PLAYER_SHOOT
+} PlayerState;
+
+
 @interface Player()
 @property int lastAngle;
 @property (retain) NSArray* shoot;
 @property (retain) NSArray* walk;
 @property (retain) NSArray* idle;
+@property CFAbsoluteTime shootingUntil;
+@property PlayerState state;
 @end
 
 @implementation Player
@@ -13,6 +21,8 @@
 
 -(id) init {
     self = [super init];
+    self.state = PLAYER_NONE;
+    self.shootingUntil = 0;
     SKTexture* texture = [SKTexture textureWithImageNamed:@"Pistol.png"];
 
     self.lastAngle = 0;
@@ -28,7 +38,7 @@
     for (int i=0; i<8; i++) {
         NSArray* strip = [Sprites clipWithTexture:texture frames:6 x:0 y:7-i width:32 height:32];
 
-        [shoot addObject:[SKAction animateWithTextures:[strip subarrayWithRange:shootRange] timePerFrame:0.1]];
+        [shoot addObject:[SKAction repeatActionForever:[SKAction animateWithTextures:[strip subarrayWithRange:shootRange] timePerFrame:0.1]]];
         [walk  addObject:[SKAction repeatActionForever:[SKAction animateWithTextures:[strip subarrayWithRange:walkRange ] timePerFrame:0.1]]];
         [idle  addObject:[SKAction animateWithTextures:[strip subarrayWithRange:idleRange ] timePerFrame:0.1]];
     }
@@ -61,43 +71,66 @@ static double clean(int x) {
 }
 
 
--(void)updateWithTimeDelta:(CFTimeInterval)delta andController:(Xbox360Controller*)controller {
-    double speed = 200;
+-(void)updateWithTimeDelta:(CFTimeInterval)delta atTime:(CFAbsoluteTime)time andController:(Xbox360Controller*)controller {
 
-    double x = clean(controller.rightStickHorizontal);
-    double y = clean(controller.rightStickVertical);
-
-    const double angle = atan2(x, y) + (M_PI);
-
-    if (fabs(x) > 0 || fabs(y)) {
-
-        int a = 0;
-
-        double d = angle + (0.785398163397448/2.0);
-
-        while (d > 0.785398163397448) {
-            a++;
-            d -= 0.785398163397448;
+    switch (self.state) {
+        case PLAYER_SHOOT:
+        {
+            if (controller.aButton) {
+                // shooting
+            } else {
+                self.state = PLAYER_NONE;
+            }
+            break;
         }
 
-        a = (a % 8);
+        case PLAYER_NONE:
+        {
+            if (controller.aButton) {
+                self.state = PLAYER_SHOOT;
+                [self.sprite runAction:[self.shoot objectAtIndex:self.lastAngle]];
+                self.shootingUntil = time + 0.4;
+            }
+            double speed = 200;
 
-        if (a != self.lastAngle) {
-            self.lastAngle = a;
-            [self.sprite removeAllActions];
-            [self.sprite runAction:[self.walk objectAtIndex:a]];
+            double x = clean(controller.rightStickHorizontal);
+            double y = clean(controller.rightStickVertical);
+
+            const double angle = atan2(x, y) + (M_PI);
+
+            if (fabs(x) > 0 || fabs(y)) {
+
+                int a = 0;
+
+                double d = angle + (0.785398163397448/2.0);
+
+                while (d > 0.785398163397448) {
+                    a++;
+                    d -= 0.785398163397448;
+                }
+
+                a = (a % 8);
+
+                if (a != self.lastAngle) {
+                    self.lastAngle = a;
+                    [self.sprite removeAllActions];
+                    [self.sprite runAction:[self.walk objectAtIndex:a]];
+                }
+            } else {
+                [self.sprite removeAllActions];
+                [self.sprite runAction:[self.idle objectAtIndex:self.lastAngle]];
+            }
+            
+            CGPoint p = self.sprite.position;
+            
+            p.x -= (speed * delta * x);
+            p.y += (speed * delta * y);
+            self.sprite.position = p;
+            self.text = [NSString stringWithFormat:@"%d %.2f", self.lastAngle, angle];
+            break;
         }
-    } else {
-        [self.sprite removeAllActions];
-        [self.sprite runAction:[self.idle objectAtIndex:self.lastAngle]];
+
     }
-
-    CGPoint p = self.sprite.position;
-
-    p.x -= (speed * delta * x);
-    p.y += (speed * delta * y);
-    self.sprite.position = p;
-    self.text = [NSString stringWithFormat:@"%d %.2f", self.lastAngle, angle];
 }
 
 @end
