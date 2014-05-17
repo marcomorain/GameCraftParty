@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		4947AFA7192798A50006E4C1 /* zombie_topdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 4947AFA6192798A50006E4C1 /* zombie_topdown.png */; };
 		4947AFA919279D510006E4C1 /* MeteorRepository1Icons_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4947AFA819279D510006E4C1 /* MeteorRepository1Icons_0.png */; };
+		4947AFAC1927B7490006E4C1 /* ik_floor_met64e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4947AFAB1927B7490006E4C1 /* ik_floor_met64e.jpg */; };
+		4947AFAF1927BAAB0006E4C1 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 4947AFAE1927BAAB0006E4C1 /* Player.m */; };
+		4947AFB11927BBD50006E4C1 /* CE_Players.png in Resources */ = {isa = PBXBuildFile; fileRef = 4947AFB01927BBD50006E4C1 /* CE_Players.png */; };
+		4947AFB71927C01F0006E4C1 /* Pistol.png in Resources */ = {isa = PBXBuildFile; fileRef = 4947AFB61927C01F0006E4C1 /* Pistol.png */; };
+		4947AFBA1927C0410006E4C1 /* Sprites.m in Sources */ = {isa = PBXBuildFile; fileRef = 4947AFB91927C0410006E4C1 /* Sprites.m */; };
+		4947AFBD1927D4C50006E4C1 /* Zombie.m in Sources */ = {isa = PBXBuildFile; fileRef = 4947AFBC1927D4C50006E4C1 /* Zombie.m */; };
 		49FAB94519277FB100C80646 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FAB94419277FB100C80646 /* Cocoa.framework */; };
 		49FAB94719277FB100C80646 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FAB94619277FB100C80646 /* SpriteKit.framework */; };
 		49FAB95119277FB100C80646 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49FAB94F19277FB100C80646 /* InfoPlist.strings */; };
@@ -40,6 +46,15 @@
 		08D75F6C3B004E7F94CF8506 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		4947AFA6192798A50006E4C1 /* zombie_topdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zombie_topdown.png; path = GameCraftParty/zombie_topdown.png; sourceTree = "<group>"; };
 		4947AFA819279D510006E4C1 /* MeteorRepository1Icons_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MeteorRepository1Icons_0.png; path = GameCraftParty/MeteorRepository1Icons_0.png; sourceTree = "<group>"; };
+		4947AFAB1927B7490006E4C1 /* ik_floor_met64e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ik_floor_met64e.jpg; sourceTree = "<group>"; };
+		4947AFAD1927BAAB0006E4C1 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		4947AFAE1927BAAB0006E4C1 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		4947AFB01927BBD50006E4C1 /* CE_Players.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CE_Players.png; path = Assets/CE_Players.png; sourceTree = "<group>"; };
+		4947AFB61927C01F0006E4C1 /* Pistol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pistol.png; path = Assets/Pistol.png; sourceTree = "<group>"; };
+		4947AFB81927C0410006E4C1 /* Sprites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sprites.h; path = GameCraftParty/Sprites.h; sourceTree = "<group>"; };
+		4947AFB91927C0410006E4C1 /* Sprites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sprites.m; path = GameCraftParty/Sprites.m; sourceTree = "<group>"; };
+		4947AFBB1927D4C50006E4C1 /* Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zombie.h; sourceTree = "<group>"; };
+		4947AFBC1927D4C50006E4C1 /* Zombie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zombie.m; sourceTree = "<group>"; };
 		49FAB94119277FB100C80646 /* GameCraftParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameCraftParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FAB94419277FB100C80646 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		49FAB94619277FB100C80646 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
@@ -89,9 +104,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4947AFAA1927B7490006E4C1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4947AFAB1927B7490006E4C1 /* ik_floor_met64e.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		49FAB93819277FB100C80646 = {
 			isa = PBXGroup;
 			children = (
+				4947AFBB1927D4C50006E4C1 /* Zombie.h */,
+				4947AFBC1927D4C50006E4C1 /* Zombie.m */,
+				4947AFB81927C0410006E4C1 /* Sprites.h */,
+				4947AFB91927C0410006E4C1 /* Sprites.m */,
+				4947AFB61927C01F0006E4C1 /* Pistol.png */,
+				4947AFB01927BBD50006E4C1 /* CE_Players.png */,
+				4947AFAD1927BAAB0006E4C1 /* Player.h */,
+				4947AFAE1927BAAB0006E4C1 /* Player.m */,
+				4947AFAA1927B7490006E4C1 /* Assets */,
 				4947AFA819279D510006E4C1 /* MeteorRepository1Icons_0.png */,
 				4947AFA6192798A50006E4C1 /* zombie_topdown.png */,
 				49FAB94C19277FB100C80646 /* GameCraftParty */,
@@ -257,7 +289,10 @@
 			files = (
 				49FAB96119277FB100C80646 /* Spaceship.png in Resources */,
 				49FAB96319277FB100C80646 /* Images.xcassets in Resources */,
+				4947AFB71927C01F0006E4C1 /* Pistol.png in Resources */,
 				49FAB95119277FB100C80646 /* InfoPlist.strings in Resources */,
+				4947AFB11927BBD50006E4C1 /* CE_Players.png in Resources */,
+				4947AFAC1927B7490006E4C1 /* ik_floor_met64e.jpg in Resources */,
 				4947AFA919279D510006E4C1 /* MeteorRepository1Icons_0.png in Resources */,
 				49FAB95719277FB100C80646 /* Credits.rtf in Resources */,
 				49FAB95919277FB100C80646 /* MainMenu.xib in Resources */,
@@ -313,9 +348,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4947AFAF1927BAAB0006E4C1 /* Player.m in Sources */,
 				49FAB95B19277FB100C80646 /* MyScene.m in Sources */,
 				49FAB95319277FB100C80646 /* main.m in Sources */,
+				4947AFBD1927D4C50006E4C1 /* Zombie.m in Sources */,
 				49FAB95E19277FB100C80646 /* AppDelegate.m in Sources */,
+				4947AFBA1927C0410006E4C1 /* Sprites.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
