@@ -1,0 +1,10 @@
+PODS:
+  - Xbox360ControllerManager (0.0.1)
+
+DEPENDENCIES:
+  - Xbox360ControllerManager (~> 0.0)
+
+SPEC CHECKSUMS:
+  Xbox360ControllerManager: 7d005bfa44493b67d8d22f602f3ce32daf31be79
+
+COCOAPODS: 0.32.1
