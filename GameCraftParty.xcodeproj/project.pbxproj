@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49FAB94519277FB100C80646 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FAB94419277FB100C80646 /* Cocoa.framework */; };
+		49FAB94719277FB100C80646 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FAB94619277FB100C80646 /* SpriteKit.framework */; };
+		49FAB95119277FB100C80646 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49FAB94F19277FB100C80646 /* InfoPlist.strings */; };
+		49FAB95319277FB100C80646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FAB95219277FB100C80646 /* main.m */; };
+		49FAB95719277FB100C80646 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 49FAB95519277FB100C80646 /* Credits.rtf */; };
+		49FAB95919277FB100C80646 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49FAB95819277FB100C80646 /* MainMenu.xib */; };
+		49FAB95B19277FB100C80646 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FAB95A19277FB100C80646 /* MyScene.m */; };
+		49FAB95E19277FB100C80646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FAB95D19277FB100C80646 /* AppDelegate.m */; };
+		49FAB96119277FB100C80646 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FAB96019277FB100C80646 /* Spaceship.png */; };
+		49FAB96319277FB100C80646 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FAB96219277FB100C80646 /* Images.xcassets */; };
+		49FAB96A19277FB100C80646 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FAB96919277FB100C80646 /* XCTest.framework */; };
+		49FAB96B19277FB100C80646 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FAB94419277FB100C80646 /* Cocoa.framework */; };
+		49FAB97319277FB100C80646 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49FAB97119277FB100C80646 /* InfoPlist.strings */; };
+		49FAB97519277FB100C80646 /* GameCraftPartyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FAB97419277FB100C80646 /* GameCraftPartyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49FAB96C19277FB100C80646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49FAB93919277FB100C80646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49FAB94019277FB100C80646;
+			remoteInfo = GameCraftParty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49FAB94119277FB100C80646 /* GameCraftParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameCraftParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FAB94419277FB100C80646 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		49FAB94619277FB100C80646 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		49FAB94919277FB100C80646 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		49FAB94A19277FB100C80646 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		49FAB94B19277FB100C80646 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49FAB94E19277FB100C80646 /* GameCraftParty-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameCraftParty-Info.plist"; sourceTree = "<group>"; };
+		49FAB95019277FB100C80646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49FAB95219277FB100C80646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49FAB95419277FB100C80646 /* GameCraftParty-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameCraftParty-Prefix.pch"; sourceTree = "<group>"; };
+		49FAB95619277FB100C80646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		49FAB95819277FB100C80646 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		49FAB95A19277FB100C80646 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		49FAB95C19277FB100C80646 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		49FAB95D19277FB100C80646 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49FAB95F19277FB100C80646 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49FAB96019277FB100C80646 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		49FAB96219277FB100C80646 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49FAB96819277FB100C80646 /* GameCraftPartyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameCraftPartyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FAB96919277FB100C80646 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		49FAB97019277FB100C80646 /* GameCraftPartyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameCraftPartyTests-Info.plist"; sourceTree = "<group>"; };
+		49FAB97219277FB100C80646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49FAB97419277FB100C80646 /* GameCraftPartyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameCraftPartyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49FAB93E19277FB100C80646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FAB94719277FB100C80646 /* SpriteKit.framework in Frameworks */,
+				49FAB94519277FB100C80646 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FAB96519277FB100C80646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FAB96B19277FB100C80646 /* Cocoa.framework in Frameworks */,
+				49FAB96A19277FB100C80646 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49FAB93819277FB100C80646 = {
+			isa = PBXGroup;
+			children = (
+				49FAB94C19277FB100C80646 /* GameCraftParty */,
+				49FAB96E19277FB100C80646 /* GameCraftPartyTests */,
+				49FAB94319277FB100C80646 /* Frameworks */,
+				49FAB94219277FB100C80646 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49FAB94219277FB100C80646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49FAB94119277FB100C80646 /* GameCraftParty.app */,
+				49FAB96819277FB100C80646 /* GameCraftPartyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49FAB94319277FB100C80646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49FAB94419277FB100C80646 /* Cocoa.framework */,
+				49FAB94619277FB100C80646 /* SpriteKit.framework */,
+				49FAB96919277FB100C80646 /* XCTest.framework */,
+				49FAB94819277FB100C80646 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49FAB94819277FB100C80646 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49FAB94919277FB100C80646 /* AppKit.framework */,
+				49FAB94A19277FB100C80646 /* CoreData.framework */,
+				49FAB94B19277FB100C80646 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		49FAB94C19277FB100C80646 /* GameCraftParty */ = {
+			isa = PBXGroup;
+			children = (
+				49FAB95819277FB100C80646 /* MainMenu.xib */,
+				49FAB95A19277FB100C80646 /* MyScene.m */,
+				49FAB95C19277FB100C80646 /* MyScene.h */,
+				49FAB95D19277FB100C80646 /* AppDelegate.m */,
+				49FAB95F19277FB100C80646 /* AppDelegate.h */,
+				49FAB96019277FB100C80646 /* Spaceship.png */,
+				49FAB96219277FB100C80646 /* Images.xcassets */,
+				49FAB94D19277FB100C80646 /* Supporting Files */,
+			);
+			path = GameCraftParty;
+			sourceTree = "<group>";
+		};
+		49FAB94D19277FB100C80646 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49FAB94E19277FB100C80646 /* GameCraftParty-Info.plist */,
+				49FAB94F19277FB100C80646 /* InfoPlist.strings */,
+				49FAB95219277FB100C80646 /* main.m */,
+				49FAB95419277FB100C80646 /* GameCraftParty-Prefix.pch */,
+				49FAB95519277FB100C80646 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49FAB96E19277FB100C80646 /* GameCraftPartyTests */ = {
+			isa = PBXGroup;
+			children = (
+				49FAB97419277FB100C80646 /* GameCraftPartyTests.m */,
+				49FAB96F19277FB100C80646 /* Supporting Files */,
+			);
+			path = GameCraftPartyTests;
+			sourceTree = "<group>";
+		};
+		49FAB96F19277FB100C80646 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49FAB97019277FB100C80646 /* GameCraftPartyTests-Info.plist */,
+				49FAB97119277FB100C80646 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49FAB94019277FB100C80646 /* GameCraftParty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FAB97819277FB100C80646 /* Build configuration list for PBXNativeTarget "GameCraftParty" */;
+			buildPhases = (
+				49FAB93D19277FB100C80646 /* Sources */,
+				49FAB93E19277FB100C80646 /* Frameworks */,
+				49FAB93F19277FB100C80646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameCraftParty;
+			productName = GameCraftParty;
+			productReference = 49FAB94119277FB100C80646 /* GameCraftParty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49FAB96719277FB100C80646 /* GameCraftPartyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FAB97B19277FB100C80646 /* Build configuration list for PBXNativeTarget "GameCraftPartyTests" */;
+			buildPhases = (
+				49FAB96419277FB100C80646 /* Sources */,
+				49FAB96519277FB100C80646 /* Frameworks */,
+				49FAB96619277FB100C80646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49FAB96D19277FB100C80646 /* PBXTargetDependency */,
+			);
+			name = GameCraftPartyTests;
+			productName = GameCraftPartyTests;
+			productReference = 49FAB96819277FB100C80646 /* GameCraftPartyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49FAB93919277FB100C80646 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Marc;
+				TargetAttributes = {
+					49FAB96719277FB100C80646 = {
+						TestTargetID = 49FAB94019277FB100C80646;
+					};
+				};
+			};
+			buildConfigurationList = 49FAB93C19277FB100C80646 /* Build configuration list for PBXProject "GameCraftParty" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 49FAB93819277FB100C80646;
+			productRefGroup = 49FAB94219277FB100C80646 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49FAB94019277FB100C80646 /* GameCraftParty */,
+				49FAB96719277FB100C80646 /* GameCraftPartyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49FAB93F19277FB100C80646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FAB96119277FB100C80646 /* Spaceship.png in Resources */,
+				49FAB96319277FB100C80646 /* Images.xcassets in Resources */,
+				49FAB95119277FB100C80646 /* InfoPlist.strings in Resources */,
+				49FAB95719277FB100C80646 /* Credits.rtf in Resources */,
+				49FAB95919277FB100C80646 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FAB96619277FB100C80646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FAB97319277FB100C80646 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49FAB93D19277FB100C80646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FAB95B19277FB100C80646 /* MyScene.m in Sources */,
+				49FAB95319277FB100C80646 /* main.m in Sources */,
+				49FAB95E19277FB100C80646 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FAB96419277FB100C80646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FAB97519277FB100C80646 /* GameCraftPartyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49FAB96D19277FB100C80646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49FAB94019277FB100C80646 /* GameCraftParty */;
+			targetProxy = 49FAB96C19277FB100C80646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49FAB94F19277FB100C80646 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FAB95019277FB100C80646 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		49FAB95519277FB100C80646 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FAB95619277FB100C80646 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		49FAB97119277FB100C80646 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FAB97219277FB100C80646 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49FAB97619277FB100C80646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		49FAB97719277FB100C80646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		49FAB97919277FB100C80646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameCraftParty/GameCraftParty-Prefix.pch";
+				INFOPLIST_FILE = "GameCraftParty/GameCraftParty-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		49FAB97A19277FB100C80646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameCraftParty/GameCraftParty-Prefix.pch";
+				INFOPLIST_FILE = "GameCraftParty/GameCraftParty-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		49FAB97C19277FB100C80646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameCraftParty.app/Contents/MacOS/GameCraftParty";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameCraftParty/GameCraftParty-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GameCraftPartyTests/GameCraftPartyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		49FAB97D19277FB100C80646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameCraftParty.app/Contents/MacOS/GameCraftParty";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameCraftParty/GameCraftParty-Prefix.pch";
+				INFOPLIST_FILE = "GameCraftPartyTests/GameCraftPartyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49FAB93C19277FB100C80646 /* Build configuration list for PBXProject "GameCraftParty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FAB97619277FB100C80646 /* Debug */,
+				49FAB97719277FB100C80646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FAB97819277FB100C80646 /* Build configuration list for PBXNativeTarget "GameCraftParty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FAB97919277FB100C80646 /* Debug */,
+				49FAB97A19277FB100C80646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49FAB97B19277FB100C80646 /* Build configuration list for PBXNativeTarget "GameCraftPartyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FAB97C19277FB100C80646 /* Debug */,
+				49FAB97D19277FB100C80646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49FAB93919277FB100C80646 /* Project object */;
+}
